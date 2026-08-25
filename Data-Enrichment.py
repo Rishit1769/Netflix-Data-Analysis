@@ -7,3 +7,9 @@ df["date_added"] = pd.to_datetime(df["date_added"].str.strip())
 df["year_added"] = df["date_added"].dt.year
 
 print(df["year_added"])
+
+movies = df[df['type']=="Movie"]
+print(movies)
+
+series = df[df['type']=="TV Show"]
+print(series)
